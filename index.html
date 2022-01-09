@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="root">
+            <div class="wrapper">
+                <section class="enter_words">
+                    <div class="enter_words_title _title">Введите слова!</div>
+                    <textarea
+                        id="textareaInputWords"
+                        placeholder="Ввод здесь..."
+                    ></textarea>
+                    <div class="enter_words_message _message" id="enterWordsMessage">
+                        
+                    </div>
+                    <button id="buttonEnterWords">Ввести слова</button>
+                </section>
+            </div>
+
+            <div class="wrapper">
+                <section class="train_words">
+                    <div class="train_words_title _title">
+                        Тренировка на знание слов
+                    </div>
+                    <div class="train_words_form">
+                        <div class="train_words_word" id="trainWordsWord">
+                            Слово
+                        </div>
+                        <input type="text" id="inputWordTranslation" />
+                        <button id="buttonDontKnow">Не знаю!</button>
+                    </div>
+                    <div class="train_words_result _message">Здесь будет показываться результат :P</div>
+                </section>
+            </div>
+
+            <div class="wrapper">
+                <section class="progress wrapper">
+                    <div class="progress_title _title">
+                        А тут можно сохранить или загрузить прогресс
+                    </div>
+                    <div class="progress_buttons_wrapper">
+                        <button id="buttonLoad" class="_colOrange">Загрузить</button>
+                        <button id="buttonSave" class="_colOrange">Сохранить</button>    
+                    </div>
+                   
+                </section>
+            </div>
+
+            <section class="save_progress _bubbleSection">
+                <div class="_bubbleWrapper">
+                    <div class="saved_data" id="savedData"></div>
+                    <div class="train_words_result _message">Скопируйте данный текст. В дальнейшем при загрузке вставьте его в соответствующее окно.</div>
+                </div>
+            </section>
+            <section class="load_progress _bubbleSection">
+                <div class="_bubbleWrapper _flexColumn">
+                    <div class="train_words_result _message">Вы можете загрузить свой прогресс, если до этого предварительно сохраняли его через секцию сохранения. Вставьте сгенерированный текст и нажмите кнопку загрузки.</div>
+                    <textarea id="textareaLoadData" ></textarea>
+                    <button id="buttonLoadData">Загрузить данные</button>
+                </div>
+            </section>
+
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>

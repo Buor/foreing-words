@@ -114,6 +114,8 @@ input {
 .wrapper {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .enter_words {
     display: flex;

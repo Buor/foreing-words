@@ -194,3 +194,7 @@ function showMessage(messageElement, message, ms = -1) {
     if(ms !== -1)
         setTimeout(() => messageElement.hidden = true, ms)
 }
+
+function useIndexedDB() {
+
+}
